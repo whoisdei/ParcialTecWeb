@@ -1,3 +1,5 @@
+
+/* ---------- Variables ---------- */
 :root {
   --color-green: #1B9832;       /* verde principal (fondo hero, botones) */
   --color-green-dark: #157A28;  /* hover del verde */
@@ -14,6 +16,7 @@
   --container-width: 1160px;
 }
 
+/* ---------- Reset básico ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -59,6 +62,7 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+/* ---------- Botones ---------- */
 .btn {
   display: inline-block;
   padding: 14px 28px;
@@ -67,12 +71,6 @@ h1, h2, h3 {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  transition: transform 0.15s ease, background-color 0.15s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
 }
 
 .btn--dark {
@@ -93,7 +91,9 @@ h1, h2, h3 {
   background-color: var(--color-green-dark);
 }
 
-
+/* 
+   HEADER
+    */
 .site-header {
   position: sticky;
   top: 0;
@@ -124,8 +124,6 @@ h1, h2, h3 {
   color: var(--color-white);
   font-size: 15px;
   font-weight: 600;
-  opacity: 0.95;
-  transition: opacity 0.15s ease;
 }
 
 .main-nav a:hover {
@@ -150,11 +148,11 @@ h1, h2, h3 {
   height: 2px;
   width: 100%;
   background-color: var(--color-white);
-  border-radius: 2px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-
+/* 
+   HERO
+    */
 .hero {
   background-color: var(--color-green);
   padding-top: 60px;
@@ -193,7 +191,9 @@ h1, h2, h3 {
   padding: 12px;
 }
 
-
+/* 
+   COMPANIES
+    */
 .companies {
   background-color: var(--color-green);
   padding-bottom: 90px;
@@ -235,7 +235,9 @@ h1, h2, h3 {
   background-color: var(--color-white);
 }
 
-
+/* 
+   BRANDING & DESIGN SYSTEM
+    */
 .branding {
   background-color: var(--color-green);
   padding-bottom: 90px;
@@ -264,7 +266,9 @@ h1, h2, h3 {
   max-width: 380px;
 }
 
-
+/* 
+   CUSTOM & PLUGIN DEVELOPMENT
+    */
 .services {
   background-color: var(--color-green);
   padding-bottom: 90px;
@@ -332,7 +336,9 @@ h1, h2, h3 {
   color: var(--color-text-muted);
 }
 
-
+/* 
+  Be a part of the next big thing"
+    */
 .cta {
   background-color: var(--color-green);
   padding-bottom: 100px;
@@ -365,7 +371,9 @@ h1, h2, h3 {
   max-width: 420px;
 }
 
-
+/* 
+   FOOTER
+    */
 .site-footer {
   background-color: var(--color-gray-dark);
   padding: 64px 0 32px;
@@ -413,7 +421,9 @@ h1, h2, h3 {
   padding-top: 24px;
 }
 
-
+/* 
+   RESPONSIVE — TABLET
+    */
 @media (max-width: 1024px) {
   .hero__image {
     width: 360px;
@@ -432,7 +442,10 @@ h1, h2, h3 {
   }
 }
 
-
+/* 
+   RESPONSIVE — MÓVIL
+  
+    */
 @media (max-width: 768px) {
 
   .container {
@@ -602,7 +615,9 @@ h1, h2, h3 {
   }
 }
 
-
+/* 
+   RESPONSIVE — MÓVIL PEQUEÑO
+    */
 @media (max-width: 420px) {
   .hero__text h1 {
     font-size: 26px;
