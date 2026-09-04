@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Agency | Building Digital Products, Brands &amp; Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <p class="logo">Digital Agency</p>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#testimonials">testimonials</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Building Digital Products, Brands &amp; Experience</h1>
+          <p>Digital Agency is your online team mangement tool that easy and prompt</p>
+          <a href="#contact" class="btn btn--dark">Contact Us</a>
+        </div>
+        <div class="hero__image">
+          <img src="assets/hero-illustration.png" alt="Equipo de trabajo colaborando frente a un computador">
+        </div>
+      </div>
+    </section>
+
+    <section class="companies">
+      <div class="container">
+        <p class="companies__label">Trusted By 4,000+ Companies</p>
+        <div class="companies__bar">
+          <span class="brand brand--spotify"><i class="brand__dot"></i>Spotify</span>
+          <span class="brand brand--slack">✽ slack</span>
+          <span class="brand brand--dropbox">⚏ Dropbox</span>
+          <span class="brand brand--zoom">zoom</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="branding" id="about">
+      <div class="container branding__inner">
+        <div class="branding__image">
+          <img src="assets/branding-illustration.png" alt="Ilustración de diseñadores llevando un lápiz gigante">
+        </div>
+        <div class="branding__text">
+          <h2>Branding &amp; Design System</h2>
+          <p>Commonly used in the graphic, print &amp; publishing industris for previewing visual layout and mockups</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="testimonials">
+      <div class="container">
+        <h2 class="services__title">Custome &amp; Plugin Development</h2>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon service-card__icon--website">
+              <img src="assets/icon-website.png" alt="">
+            </div>
+            <h3>Website Design</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon service-card__icon--webdev">
+              <img src="assets/icon-webdev.png" alt="">
+            </div>
+            <h3>Web Development</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon service-card__icon--mobile">
+              <img src="assets/icon-mobile.png" alt="">
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta__box">
+          <div class="cta__image">
+            <img src="assets/contact-illustration.png" alt="Agente de soporte trabajando en su computador">
+          </div>
+          <div class="cta__text">
+            <h2>Be a part of the next big thing</h2>
+            <p>We work with Brans, Startups, to SMEs. Colaborate for more impact and growt</p>
+            <a href="#contact" class="btn btn--green">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <h3>Digital Agency</h3>
+        <p>Building Digital Products, Brands &amp; Experience</p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Cuistomer Stories</a></li>
+          <li><a href="#">Glossery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Social Media</h3>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__bottom">© David. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('is-open');
+      navToggle.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('is-open');
+        navToggle.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
