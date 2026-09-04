@@ -186,7 +186,6 @@ h1, h2, h3 {
 .hero__image {
   flex-shrink: 0;
   width: 420px;
-  background-color: var(--color-white);
   border-radius: 16px;
   padding: 12px;
 }
